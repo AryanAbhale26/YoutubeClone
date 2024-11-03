@@ -10,7 +10,7 @@ const Video = () => {
       <div className="w-[100%] h-full">
         <PlayVideo videoId={videoId} />
       </div>
-      <div className="w-[50%] h-full ">
+      <div className="w-[40%] h-full ">
         <Recommended categoryId={categoryId} />
       </div>
     </div>

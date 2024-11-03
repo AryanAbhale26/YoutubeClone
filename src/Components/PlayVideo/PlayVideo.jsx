@@ -8,8 +8,10 @@ import jack from "../../assets/jack.png";
 import user_profile from "../../assets/user_profile.jpg";
 import { API_KEY, valueConverter } from "../../Data/Api";
 import moment from "moment";
+import { useParams } from "react-router-dom";
 
-function PlayVideo({ videoId }) {
+function PlayVideo() {
+  const { videoId } = useParams();
   const [apiData, setApiData] = useState(null);
   const [channelData, setChannelData] = useState(null);
   const [commentData, setCommentData] = useState({ items: [] });

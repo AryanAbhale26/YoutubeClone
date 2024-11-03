@@ -9,6 +9,7 @@ import thumbnail7 from "../../assets/thumbnail7.png";
 import thumbnail8 from "../../assets/thumbnail8.png";
 import thumbnail9 from "../../assets/thumbnail9.png";
 import { API_KEY } from "../../Data/Api";
+import { Link } from "react-router-dom";
 
 const Recommended = ({ categoryId }) => {
   const [recommendedData, setRecommendedData] = useState([]);
@@ -29,7 +30,11 @@ const Recommended = ({ categoryId }) => {
     <div className="recommended mt-[5rem]  flex flex-col gap-4">
       {recommendedData.map((data, i) => {
         return (
-          <div className="side-video-list flex gap-3" key={i}>
+          <Link
+            to={`/video/${data.snippet.categoryId}/${data.id}`}
+            className="side-video-list flex gap-3"
+            key={i}
+          >
             <img
               src={data.snippet.thumbnails.high.url}
               className="w-[40%] rounded-md"
@@ -40,7 +45,7 @@ const Recommended = ({ categoryId }) => {
               <p>{data.snippet.channelTitle}</p>
               <p>{data.statistics.viewCount} views</p>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>
