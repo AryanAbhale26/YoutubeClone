@@ -21,13 +21,13 @@ function MergePractice() {
             the message above, and ask your friend to change the same line in a
             different way.
           </p>
-          <link
+          <button
             type="button"
             onClick={() => setLikes((currentLikes) => currentLikes + 1)}
             className="rounded-full bg-red-600 px-5 py-2 font-semibold text-white transition hover:bg-red-700"
           >
             Like {likes}
-          </link>
+          </button>
           <button>Click Me!</button>
         </div>
       </div>
