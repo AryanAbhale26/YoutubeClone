@@ -14,15 +14,15 @@ import { CiSearch } from "react-icons/ci";
 const Navbar = ({ setSiderBar }) => {
   return (
     <nav className="flex items-center border-b-2 border-white w-full h-16 px-6 justify-between shadow-lg bg-white fixed top-0 left-0 z-50">
-      <div className="flex flex-row items-center gap-6">
-        <div
+      <div className="flex flex-row items-center gap-8">
+        {/* <div
           className=" hover:bg-slate-400 h-12 w-12 flex items-center justify-center   rounded-full"
           onClick={() => {
             setSiderBar((prev) => (prev === false ? true : false));
           }}
         >
           <FaAlignJustify />
-        </div>
+        </div> */}
         <Link to="/">
           <img src={logo1} className="h-16" alt="Logo" />
         </Link>
