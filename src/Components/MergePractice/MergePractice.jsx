@@ -5,8 +5,8 @@ function MergePractice() {
   const practiceMessage = "Practice makes merging easier!";
 
   return (
-    <main className="min-h-screen bg-[#f9f9f9] px-4 py-10 sm:px-8">
-      <section className="mx-auto max-w-3xl rounded-xl bg-white p-6 shadow-sm sm:p-10">
+    <div className="min-h-screen bg-[#f9f9f9] px-4 py-10 sm:px-8">
+      <div className="mx-auto max-w-3xl rounded-xl bg-white p-6 shadow-sm sm:p-10">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-red-600">
           Collaboration Practice
         </p>
@@ -30,8 +30,8 @@ function MergePractice() {
           </button>
           <button>Click Me!</button>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
 
