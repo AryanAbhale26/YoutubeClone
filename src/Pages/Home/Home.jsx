@@ -14,8 +14,8 @@ const Home = ({ sidebar }) => {
       />
       <div
         className={`transition-all duration-1000 ${
-          sidebar ? "ml-8" : "ml-[10%]  "
-        } w-full py-10 px-10`}
+          sidebar ? "ml-12" : "ml-[10%]  "
+        } w-full py-8 px-8`}
       >
         <Feed category={category} setCategory={setCategory} sidebar={sidebar} />
       </div>

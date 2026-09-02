@@ -48,7 +48,7 @@ export const videoData = [
   {
     thumbnail: thumbnail7,
     title: "Introduction to TypeScript",
-    channel: "Aryan",
+    channel: "Onkar",
     views: "12k views • 6 hours ago",
   },
   {
@@ -60,7 +60,7 @@ export const videoData = [
   {
     thumbnail: thumbnail9,
     title: "Learn React Basics",
-    channel: "Aryan",
+    channel: "Soham",
     views: "15k views • 2 days ago",
   },
   {

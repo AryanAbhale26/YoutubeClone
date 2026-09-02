@@ -9,12 +9,12 @@ body {
 
 /* Thin Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
-  height: 8px; /* Height of the scrollbar for horizontal scrollbars */
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Track color */
+  background: pink; /* Track color */
 }
 
 ::-webkit-scrollbar-thumb {
