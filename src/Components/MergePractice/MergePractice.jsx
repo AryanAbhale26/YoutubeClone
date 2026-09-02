@@ -6,7 +6,7 @@ function MergePractice() {
 
   return (
     <main className="min-h-screen bg-[#f9f9f9] px-4 py-10 sm:px-8">
-      <section className="mx-auto max-w-3xl rounded-xl bg-white p-6 shadow-sm sm:p-10">
+      <div className="mx-auto max-w-3xl rounded-xl bg-white p-6 shadow-sm sm:p-10">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-red-600">
           Collaboration Practice
         </p>
@@ -21,15 +21,16 @@ function MergePractice() {
             the message above, and ask your friend to change the same line in a
             different way.
           </p>
-          <button
+          <link
             type="button"
             onClick={() => setLikes((currentLikes) => currentLikes + 1)}
             className="rounded-full bg-red-600 px-5 py-2 font-semibold text-white transition hover:bg-red-700"
           >
             Like {likes}
-          </button>
+          </link>
+          <button>Click Me!</button>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
